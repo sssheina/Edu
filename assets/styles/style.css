@@ -72,13 +72,13 @@ margin-top: 24px;
     width:100px;
     border: 8px solid rgb(220, 37, 37);
 }
- .title {
+.title {
     font-family: 'Rubik', sans-serif;
     font-size: 24px;
     font-weight: 700;
     line-height: 28.44px;
     color: #0E163D;
- }
+}
 .mainTitle {
     justify-self: center; 
     align-self: center; 
@@ -90,7 +90,7 @@ margin-top: 24px;
     justify-self: start; 
     align-self: center; 
     grid-area: img; 
-  }
+}
 
 .buttonsContainer {
     display: flex;
@@ -139,7 +139,7 @@ margin-top: 24px;
     justify-self: start; 
     align-self: center; 
     grid-area: titleCards; 
-  }
+}
 
 .buttonCards {
     justify-self: end; 
@@ -165,10 +165,13 @@ margin-top: 24px;
     gap: 16px;
     width: 342px;
     height: 374px;
+    margin-top: 16px;
 }
 .cardItem {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
     width: 342px;
     height: 114px;
     box-shadow: 0px 24px 32px rgba(14, 22, 61, 0.04), 0px 16px 24px rgba(14, 22, 61, 0.04), 0px 4px 8px rgba(14, 22, 61, 0.04), 0px 0px 1px rgba(14, 22, 61, 0.04);
@@ -183,5 +186,94 @@ margin-top: 24px;
 }
 ._purple {
     background-color: #794CEC;
-;
+}
+
+.cardName {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: white; 
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: white; 
+}
+
+.blockTags {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+}
+
+.cardTag {
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: white; 
+    padding: 4px 6px;
+    background: linear-gradient(225deg, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.2) 100%);
+    border: 0.5px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.04), 0px 0px 2px rgba(255, 255, 255, 0.06), 0px 0px 1px rgba(255, 255, 255, 0.04);
+    backdrop-filter: blur(3px);
+    border-radius: 13px;
+}
+
+.cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 16px;
+    gap: 14px;
+}
+
+.cardCourse {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cardProgress {
+    display: flex;
+    align-items: center;
+    width: 57px;
+    height: 114px;
+    color:white;
+    font-family: 'Rubik';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    justify-content: center;
+    justify-self: center;
+    justify-items: center;
+}
+
+.card-pink {
+    width: 57px;
+    height: 114px;
+    background-image: url("/assets/images/Group_pink.png");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+
+.card-blue {
+    width: 57px;
+    height: 114px;
+    background-image: url("/assets/images/Group_blue.png");
+    background-repeat:no-repeat;
+    background-size:cover;
 }
